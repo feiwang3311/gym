@@ -507,3 +507,9 @@ register(
     entry_point='gym.envs.safety:OffSwitchCartpoleProbEnv',
     max_episode_steps=200,
 )
+
+# sat solver envs
+register(
+    id='gym_sat_Env-v0',
+    entry_point='gym.envs.SatSolver:gym_sat_Env',
+) 

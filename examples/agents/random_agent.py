@@ -16,7 +16,7 @@ class RandomAgent(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=None)
-    parser.add_argument('env_id', nargs='?', default='CartPole-v0', help='Select the environment to run')
+    parser.add_argument('env_id', nargs='?', default='gym_sat_Env-v0', help='Select the environment to run')
     args = parser.parse_args()
 
     # Call `undo_logger_setup` if you want to undo Gym's logger setup
@@ -65,4 +65,4 @@ if __name__ == '__main__':
     # Upload to the scoreboard. We could also do this from another
     # process if we wanted.
     logger.info("Successfully ran RandomAgent. Now trying to upload results to the scoreboard. If it breaks, you can always just try re-uploading the same results.")
-    gym.upload(outdir)
+    # gym.upload(outdir)

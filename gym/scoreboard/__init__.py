@@ -1173,4 +1173,12 @@ The robot model was originally created by Tassa et al. [Tassa12]_.
     deprecated=True,
 )
 
+# sat solver scoreboard
+add_task(
+    id="gym_sat_Env-v0",
+    summary="environment adpated from sat solver minisat",
+    group='SatSolver',
+    deprecated=True,
+)
+
 registry.finalize()
