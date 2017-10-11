@@ -1181,4 +1181,20 @@ add_task(
     deprecated=True,
 )
 
+# sat solver scoreboard
+add_task(
+    id="gym_sat_Env-v1",
+    summary="environment adpated from sat solver minisat (with sorting feature)",
+    group='SatSolver',
+    deprecated=True,
+)
+
+# sat solver scoreboard
+add_task(
+    id="gym_sat_Env-v2",
+    summary="environment adpated from sat solver minisat (with permutation feature)",
+    group='SatSolver',
+    deprecated=True,
+)
+
 registry.finalize()

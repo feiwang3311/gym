@@ -513,3 +513,15 @@ register(
     id='gym_sat_Env-v0',
     entry_point='gym.envs.SatSolver:gym_sat_Env',
 ) 
+
+# sat solver envs that always sort the rows of states
+register(
+    id='gym_sat_Env-v1',
+    entry_point='gym.envs.SatSolver:gym_sat_sort_Env',
+) 
+
+# sat solver envs that always permute the input file
+register(
+    id='gym_sat_Env-v2',
+    entry_point='gym.envs.SatSolver:gym_sat_permute_Env',
+) 
