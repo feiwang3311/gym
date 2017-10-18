@@ -1197,4 +1197,12 @@ add_task(
     deprecated=True,
 )
 
+# sat solver scoreboard
+add_task(
+    id="gym_sat_Env-v3",
+    summary="environment adpated from sat solver minisat (for graph coloring)",
+    group='SatSolver',
+    deprecated=True,
+)
+
 registry.finalize()
