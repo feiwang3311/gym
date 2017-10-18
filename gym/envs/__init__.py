@@ -531,3 +531,10 @@ register(
     id='gym_sat_Env-v3',
     entry_point='gym.envs.SatSolver:gym_sat_graph_Env',
 ) 
+
+
+# sat solver envs for graph coloring (no preprocess or post process, larger)
+register(
+    id='gym_sat_Env-v4',
+    entry_point='gym.envs.SatSolver:gym_sat_graph2_Env',
+) 
